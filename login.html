@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="login.css">
+
+    <script>
+        function openSignup() {
+            document.getElementById("mySignup__box").style.width = "410px";       
+        }
+        function closeSignup() {
+            document.getElementById("mySignup__box").style.width = "0"; 
+            
+        }
+    </script>    
+</head>
+<body>
+    <form action="action.php" class="login">
+        <div class="login__box">
+            <ul class="login__lists">
+                <p class="login__header">login</p>
+                <input style="font-size: 30px;" type="text" name="username" class="login__username" placeholder="username"><br>
+                <input style="font-size: 30px;" type="password" name="password" class="login__password" placeholder="password"><br>
+                <a href="#"><button class="login__go">go</button></a><br>
+                <a href="#" class="login__forget-password">forget your password ?</a>
+            </ul>
+        </div>
+    </form>
+   <a href="#" class="signup__btn" onclick="openSignup()">&#x270E;</a>
+        <form action="#" class="signup"></form>
+            <div id="mySignup__box" class="signup__box">
+                <div class="signup__box-lists">
+                    <a href="javascript:void(0);" class="closebtn" onclick="closeSignup()">&times;</a>
+                    <p class="signup__header">register</p>
+                    <input style="font-size: 30px;" type="text" class="signup__username" placeholder="username"><br>
+                    <input style="font-size: 30px;" type="password" class="signup__password" placeholder="password"><br>
+                    <input style="font-size: 30px;" type="password" class="signup__repeat-password" placeholder="repeat password"><br>
+                    <a href="#"><button class="signup__next">next</button></a>
+                </div>
+            </div>
+        </form>
+        
+</body>
+</html>
